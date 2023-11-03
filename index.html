@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Homepage" />
+    <meta name="author" content="Vayun Mathur" />
+    <title>Home | Vayun Mathur</title>
+    <link rel="stylesheet" href="assets/css/monochrome.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Inconsolata"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      #topimg {
+        height: 200px;
+        width: 175px;
+        position: relative;
+        left: 75px;
+      }
+
+      .main-header {
+        height: auto !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--Switcher-->
+    <!--  <div class="style-switcher">
+    <span class="style-switcher__control"></span>
+    <div class="style-switcher__list">
+      <a class="style-switcher__link style-switcher__link--color"></a>
+      <a class="style-switcher__link style-switcher__link--mono"></a>
+    </div>
+  </div>-->
+    <!--Switcher-->
+    <!--Main menu-->
+    <div class="menu">
+      <div class="container">
+        <div class="row">
+          <div class="menu__wrapper d-none d-lg-block col-md-12">
+            <nav class="">
+              <ul>
+                <li><a href="#hello">Hello</a></li>
+                <!--<li><a href="#resume">Resume</a></li>-->
+                <li><a href="#portfolio">Projects</a></li>
+                <!--<li><a href="#testimonials">Testimonials</a></li>-->
+                <li><a href="#blog">Mentions</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="menu__wrapper col-md-12 d-lg-none">
+            <button type="button" class="menu__mobile-button">
+              <span><i class="fa fa-bars" aria-hidden="true"></i></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Main menu-->
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu d-lg-none">
+      <div class="container">
+        <div class="mobile-menu__close">
+          <span><i class="mdi mdi-close" aria-hidden="true"></i></span>
+        </div>
+        <nav class="mobile-menu__wrapper">
+          <ul>
+            <li><a href="#hello">Hello</a></li>
+                <!--<li><a href="#resume">Resume</a></li>-->
+                <li><a href="#portfolio">Projects</a></li>
+                <!--<li><a href="#testimonials">Testimonials</a></li>-->
+                <li><a href="#blog">Mentions</a></li>
+                <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+
+    <!--Header-->
+    <header
+      class="main-header"
+      style="background-image: url(assets/img/img_bg_header.jpg)"
+    >
+      <div class="container">
+        <div class="row personal-profile">
+          <div class="col-md-4 personal-profile__avatar">
+            <img id="topimg" src="assets/img/IMG_5839.jpg" alt="avatar" />
+          </div>
+          <div class="col-md-8">
+            <p class="personal-profile__name">Vayun Mathur_</p>
+            <p class="personal-profile__work">
+              programming, robotics, astronomy
+            </p>
+            <div class="personal-profile__contacts"></div>
+            <p class="personal-profile__social">
+              <a href="https://github.com/vayun-mathur" target="_blank"
+                ><i class="fa fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/vayun-mathur-4643a2182/"
+                target="_blank"
+                ><i class="fa fa-linkedin-square"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/channel/UCTm4GxTpt0reV3rnYpAxmHw/featured"
+                target="_blank"
+                ><i class="fa fa-youtube-square"></i
+              ></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--Header-->
+
+    <!--Hello-->
+    <section id="hello" class="container section">
+      <div class="row">
+        <div class="col-md-10">
+          <h2 id="hello_header" class="section__title">Hi_</h2>
+          <p class="section__description">
+            I am a passionate tinkerer, programmer, and robotics enthusiast. As
+            an active member of Maker community in Singapore, I have done
+            several technology projects and service initiatives on
+            sustainability. I deeply enjoy reading history, economics, and world
+            affairs.
+          </p>
+          <!--
+        <a href="" class="section_btn site-btn"><img src="assets/img/img_btn_icon.png" alt="">Download CV</a>-->
+        </div>
+      </div>
+    </section>
+    <!--Hello-->
+
+    <hr />
+    <!--Resume-->
+
+    <!--Projects-->
+    <section id="portfolio" class="container section">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 id="portfolio_header" class="section__title">My projects_</h2>
+        </div>
+      </div>
+      <div class="portfolio-cards">
+        <div
+          class="row project-card"
+          onclick="window.location.href = 'https://www.youtube.com/watch?v=jtUbmNZLGVk';"
+        >
+          <div class="col-md-6 col-lg-5 project-card__img">
+            <img class="" style="object-position:left;" src="assets/img/robthesmartbin.jpg" alt="project-img" />
+          </div>
+          <div class="col-md-6 col-lg-7 project-card__info">
+            <h3 class="project-card__title">
+              SMART BIN - USING GOOGLE'S TENSORFLOW TO IMPROVE RECYCLING RATES
+            </h3>
+            <p class="project-card__description">
+              Separating waste is sometimes confusing and cumbersome—something
+              that can derail people's good intentions to recycle. Using
+              TensorFlow, we built a “Smart Bin” that can identify types of
+              trash and sort them automatically.
+            </p>
+            <p class="project-card__stack">Used stack:</p>
+            <ul class="tags">
+              <li>Google Tensorflow</li>
+              <li>Google Colab</li>
+              <li>Python</li>
+              <li>Arduino</li>
+            </ul>
+            <a
+              href="https://www.youtube.com/watch?v=jtUbmNZLGVk"
+              class="project-card__link"
+              >https://www.youtube.com/watch?v=jtUbmNZLGVk</a
+            >
+          </div>
+        </div>
+        <div
+          class="row project-card"
+          onclick="window.location.href = 'https://www.youtube.com/watch?v=2EsYUN9ry9U&t=1s';"
+        >
+          <div class="col-md-6 col-lg-5 project-card__img">
+            <img class="" src="assets/img/IMG_5822.jpg" alt="pandemic-img" />
+          </div>
+          <div class="col-md-6 col-lg-7 project-card__info">
+            <h3 class="project-card__title">
+              3D-Printed Myoelectric Prosthetic Arm
+            </h3>
+            <p class="project-card__description">
+              Built a 3D-printed robot hand that is controlled by muscle
+              contractions captured as EMG signals from electrodes placed on the
+              forearm. This can be used to develop low-cost prostheses that
+              significantly improves an amputee's quality of life.
+            </p>
+            <p class="project-card__stack">Used:</p>
+            <ul class="tags">
+              <li>
+                Servo motors for actuators for the bidirectional tendon system,
+                Arduino Mega to control servo angle of rotation, and EMG sensors
+                and electrodes to capture EMG signals.
+              </li>
+            </ul>
+            <a
+              href="https://www.youtube.com/watch?v=2EsYUN9ry9U"
+              class="project-card__link"
+              >https://www.youtube.com/watch?v=2EsYUN9ry9U</a
+            >
+          </div>
+        </div>
+        <div
+          class="row project-card"
+          onclick="window.location.href = 'http://vayunmathur.com/pandemic/index.php';"
+        >
+          <div class="col-md-6 col-lg-5 project-card__img">
+            <img class="" src="assets/img/pandemicsimulator.jpg" alt="pandemic-img" />
+          </div>
+          <div class="col-md-6 col-lg-7 project-card__info">
+            <h3 class="project-card__title">Pandemic Simulator</h3>
+            <p class="project-card__description">
+              Built a web-based application that simulates the spread of a virus
+              through a community and allows testing of measures like travel
+              restrictions, social distancing, workplace/ school closures,
+              hospital/ICU readiness on spread and fatality.
+            </p>
+            <p class="project-card__stack">Used stack:</p>
+            <ul class="tags">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Google Charts</li>
+              <li>jQuery</li>
+            </ul>
+            <a
+              href="http://vayunmathur.com/pandemic/index.php"
+              class="project-card__link"
+              >http://vayunmathur.com/pandemic/index.php</a
+            >
+          </div>
+        </div>
+        <div
+          class="row project-card"
+          onclick="window.location.href = 'https://www.youtube.com/watch?v=ffyatxbOjUA'"
+        >
+          <div class="col-md-6 col-lg-5 project-card__img">
+            <img class="" src="assets/img/soong1.jpg" alt="AI Gaze Control" />
+          </div>
+          <div class="col-md-6 col-lg-7 project-card__info">
+            <h3 class="project-card__title">
+              Soong One: 3D-printed robot head with gaze control and facial
+              recognition
+            </h3>
+            <p class="project-card__description">
+              Built 3D-printed robot head that uses a camera and a
+              machine-learning neural network to recognize individuals and
+              follow the gaze - a skill valuable for a more realistic
+              interaction!
+            </p>
+            <p class="project-card__stack">Used:</p>
+            <ul class="tags">
+              <li>
+                6 servos which provide 6 degrees of motion, a custom printed
+                circuit board that takes power and 4 PWM data channels and
+                passes them along to the 4 servos in the head, the Adafruit I2C
+                servo board that creates the servo PWM signals, Arduino Mega and
+                Raspberry Pi 4 and Raspberry Camera v2.
+              </li>
+            </ul>
+            <a
+              href="https://www.youtube.com/watch?v=ffyatxbOjUA"
+              class="project-card__link"
+              >https://www.youtube.com/watch?v=ffyatxbOjUA</a
+            >
+          </div>
+        </div>
+        <div
+          class="row project-card"
+        >
+          <div class="col-md-6 col-lg-5 project-card__img">
+            <img
+              class=""
+              onclick="location.href = 'https://www.youtube.com/watch?v=CgHbqtwh4Lg'"
+              src="assets/img/img_project_2_mono.png"
+              alt="project-img"
+            />
+          </div>
+          <div class="col-md-6 col-lg-7 project-card__info">
+            <h3 class="project-card__title">
+              Singapore Weather & Bus Station Alexa Skill
+            </h3>
+            <p class="project-card__description">
+              Built one of the first voice-bots in 2017 using the Singapore LTA
+              API to check next arriving bus time. Featured by GovTech.
+            </p>
+            <p class="project-card__stack">Used stack:</p>
+            <ul class="tags">
+              <li>Alexa Service API</li>
+              <li>JavaScript</li>
+            </ul>
+            <a
+              href="https://www.youtube.com/watch?v=CgHbqtwh4Lg"
+              class="project-card__link"
+              >https://www.youtube.com/watch?v=CgHbqtwh4Lg</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Projects-->
+
+    <!--Mentions-->
+    <section id="blog" class="container section">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 id="blog_header" class="section__title">Mentions_</h2>
+        </div>
+      </div>
+
+      <div class="row post-cards">
+        <div class="col-md-4">
+          <a
+            href="https://www.blog.google/around-the-globe/google-asia/singapore-students-using-cloud-smarter-recycling/"
+          >
+            <div class="post-cards__card">
+              <div class="post-cards__img">
+                <img
+                  src="assets/img/vayungoogle.jpg"
+                  alt="Google - Smart Bin"
+                />
+              </div>
+              <div class="post-cards__info">
+                <p class="post-cards__date">October 24, 2019</p>
+                <h3 class="post-cards_title">
+                  The Singapore students using Cloud for smarter recycling
+                </h3>
+                <p class="post-cards_description">
+                  Using TensorFlow, they built a “Smart Bin” that can identify
+                  types of trash and sort them automatically...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a
+            href="https://news.cgtn.com/news/3d3d414d7a6b444f33457a6333566d54/index.html"
+          >
+            <div class="post-cards__card">
+              <div class="post-cards__img">
+                <img
+                  src="assets/img/CGTN.jpg"
+                  alt="Vayun Mathur interview by CGTN"
+                />
+              </div>
+              <div class="post-cards__info">
+                <p class="post-cards__date">April 02, 2019</p>
+                <h3 class="post-cards_title">
+                  Singapore students prepare for future jobs
+                </h3>
+                <p class="post-cards_description">
+                  Fourteen-year-old, Vayun Mathur believes, that "coding is
+                  fundamentally just problem solving and whenever you create
+                  something..."
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="https://www.tech.gov.sg/media/technews/code-for-youth">
+            <div class="post-cards__card">
+              <div class="post-cards__img">
+                <img src="assets/img/vayungovtech.jpg" alt="Vayun Mathur interview by GovTech" />
+              </div>
+              <div class="post-cards__info">
+                <p class="post-cards__date">August 16, 2017</p>
+                <h3 class="post-cards_title">
+                  GovTech, A Singapore Govt. Agency - Code for Youth
+                </h3>
+                <p class="post-cards_description">
+                  Vayun Mathur, however, is not your average 12-year-old. He is
+                  already a coding whiz, and a veteran at hackathons and maker
+                  events.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="row post-cards">
+        <div class="col-md-4">
+          <a
+            href="https://www.sas.edu.sg/journeys/article/~board/high-school/post/catalyst-project-within-arms-reach"
+          >
+            <div class="post-cards__card">
+              <div class="post-cards__img">
+                <img
+                  src="assets/img/armsreach.jpg"
+                  alt="Google - Smart Bin"
+                />
+              </div>
+              <div class="post-cards__info">
+                <p class="post-cards__date">March 04, 2022</p>
+                <h3 class="post-cards_title">
+                  Catalyst Project: Within Arm's Reach
+                </h3>
+                <p class="post-cards_description">
+                  It was an a-ha moment for Singapore American School's eleventh grade student Vayun Mathur when he stumbled...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a
+            href="https://www.sas.edu.sg/journeys/article/~board/high-school/post/night-without-light-join-the-movement-to-end-energy-poverty"
+          >
+            <div class="post-cards__card">
+              <div class="post-cards__img">
+                <img
+                  src="assets/img/nightwithoutlights.jpg"
+                  alt="Vayun Mathur interview by CGTN"
+                />
+              </div>
+              <div class="post-cards__info">
+                <p class="post-cards__date">March 30, 2022</p>
+                <h3 class="post-cards_title">
+                  Night Without Lights: Join the Movement to End Energy Poverty! 
+                </h3>
+                <p class="post-cards_description">
+                  If you can read this, you probably have access to affordable and reliable electricity all day, every day... 
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="https://www.facebook.com/groups/cs50/posts/891571594323220/">
+            <div class="post-cards__card">
+              <div class="post-cards__img">
+                <img src="assets/img/vayuncs50.jpg" alt="Vayun CS50" />
+              </div>
+              <div class="post-cards__info">
+                <p class="post-cards__date">May 05, 2017</p>
+                <h3 class="post-cards_title">
+                  CS50 Final Project on Alexa Skill
+                </h3>
+                <p class="post-cards_description">
+                  This is the final project of (sixth-grader!) Vayun M. of Singapore American School who "built a custom Singapore Skill for Amazon Alexa... 
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--Blog-->
+
+    <!--Contact-->
+    <div
+      class="background"
+      style="background-image: url(assets/img/img_bg_main.jpg)"
+    >
+      <div id="contact" class="container section">
+        <div class="row">
+          <div class="col-md-12">
+            <p id="contacts_header" class="section__title">Get in touch_</p>
+          </div>
+        </div>
+        <div class="row contacts">
+          <div class="col-md-5 col-lg-4">
+            <div class="contacts__list">
+              <dl class="contact-list">
+                <dt>Email:</dt>
+                <dd>
+                  <a href="mailto:contact@vayunmathur.com"
+                    >contact@vayunmathur.com</a
+                  >
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <div class="col-md-7 col-lg-5">
+            <div class="footer">
+              <p>
+                © <span id="year-footer"></span> Vayun Mathur. All Rights
+                Reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Contact-->
+
+    <!-- Projects Modal -->
+
+    <!-- Projects Modal -->
+
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
+    <script>
+      var d = new Date();
+      $("#year-footer").html(d.getFullYear());
+    </script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/jquery.waypoints.js"></script>
+    <script src="assets/js/progress-list.js"></script>
+    <script src="assets/js/section.js"></script>
+    <script src="assets/js/portfolio-filter.js"></script>
+    <script src="assets/js/slider-carousel.js"></script>
+    <script src="assets/js/mobile-menu.js"></script>
+    <script src="assets/js/contacts.js"></script>
+    <script src="assets/js/mbclicker.min.js"></script>
+    <script src="assets/js/site-btn.js"></script>
+    <script src="assets/js/style-switcher.js"></script>
+  </body>
+</html>
